@@ -6,7 +6,6 @@ import br.edu.ifba.inf011.aval1.equipamento.Maquinas;
 public class MaquinasApplication extends Application {
 
 
-
 	@Override
 	public Equipamento criarEquipamento() {
 		// TODO Auto-generated method stub

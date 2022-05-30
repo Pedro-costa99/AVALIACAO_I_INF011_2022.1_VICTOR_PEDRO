@@ -2,10 +2,7 @@ package br.edu.ifba.inf011.aval1.equipamento;
 
 public abstract class Equipamento {
 	
-	Equipamento(){
-		System.out.println("A classe equipamento foi instanciada");
-	}
-	
+		
 	private String identificador;
 	private int quantidade;
 	
@@ -27,9 +24,18 @@ public abstract class Equipamento {
 		this.quantidade = quantidade;
 	}
 	
-	public abstract void open();
-	public abstract void close();
-	public abstract void save();
-	public abstract void revert();
+	public void criar(String identificador, int quantidade, String descricao, String marca) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void criar(String identificador, int quantidade, String descricao) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void criar(String identificador, int quantidade, Double peso) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 }

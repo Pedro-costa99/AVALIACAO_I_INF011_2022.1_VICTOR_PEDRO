@@ -9,8 +9,6 @@ public class Acessorios extends Equipamento {
 
 	private String descricao;
 	
-	
-
 	public String getDescricao() {
 		return descricao;
 	}
@@ -19,26 +17,21 @@ public class Acessorios extends Equipamento {
 		this.descricao = descricao;
 	}
 	
-	public void open() {
+	@Override
+	public void criar(String identificador, int quantidade, String descricao) {
 		// TODO Auto-generated method stub
-		System.out.println("open acessórios");
+		this.setIdentificador(identificador);
+		this.setQuantidade(quantidade);
+		this.setDescricao(descricao);
+		
+		System.out.println("NOVO ACESSÓRIO: " + this.getIdentificador() + " " + this.getQuantidade()
+		+ " " + this.getDescricao());
 		
 	}
+	
+	
 
-	public void close() {
-		// TODO Auto-generated method stub
-		
-	}
 
-	public void save() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void revert() {
-		// TODO Auto-generated method stub
-		
-	}
 	
 	
 

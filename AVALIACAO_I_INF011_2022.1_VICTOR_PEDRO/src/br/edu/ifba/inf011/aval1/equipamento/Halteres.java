@@ -2,11 +2,10 @@ package br.edu.ifba.inf011.aval1.equipamento;
 
 public class Halteres extends Equipamento {
 	
-	public Halteres(String identificador, int quantidade) {
+	public Halteres(String identificador, int quantidade, double d) {
 		super(identificador, quantidade);
 		// TODO Auto-generated constructor stub
 	}
-
 
 	private Double peso;
 
@@ -18,28 +17,16 @@ public class Halteres extends Equipamento {
 		this.peso = peso;
 	}
 
-	
-	public void open() {
-		// TODO Auto-generated method stub
-		System.out.println("open halteres");
-		
-	}
 
-	
-	public void close() {
+	@Override
+	public void criar(String identificador, int quantidade, Double peso) {
 		// TODO Auto-generated method stub
+		this.setIdentificador(identificador);
+		this.setQuantidade(quantidade);
+		this.setPeso(peso);
 		
-	}
-
-	
-	public void save() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	
-	public void revert() {
-		// TODO Auto-generated method stub
+		System.out.println("NOVO HALTERE: " + this.getIdentificador() + " " + this.getQuantidade()
+		+ " " + this.getPeso());
 		
 	}
 	
