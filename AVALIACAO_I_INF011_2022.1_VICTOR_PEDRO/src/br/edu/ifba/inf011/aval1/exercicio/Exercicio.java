@@ -8,7 +8,9 @@ public class Exercicio {
 	private TipoExercicio [] tiposExercicios;
 	private String [] gruposMusculares = new String [3];
 	
-	
+	public Exercicio () {
+		
+	}
 	
 	private Exercicio(String descricao, TipoExercicio[] tiposExercicios, String[] gruposMusculares) {
 		super();
